@@ -1,0 +1,6 @@
+drop schema clickops;
+drop database clickops;
+drop role clickadmin;
+drop user clickadmin;
+
+

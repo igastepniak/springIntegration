@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    
+   
+    <changeSet id="0" author="istepniak">
+        <createTable tableName="client" schemaName="example">
+            <column name="id" type="bigint" >
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="promo" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="username" type="varchar(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="password" type="varchar(1024)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="session_key" type="varchar(512)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="secret_key" type="varchar(512)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timezone" type="varchar(255)" defaultValue="UTC">
+                <constraints nullable="false"/>
+            </column>
+            <column name="account_level" type="bigint" defaultValue="1">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="timestamp" defaultValue="2013-12-17 12:39:35"/>
+            <column name="terms_accepted_date" type="timestamp" defaultValue="2013-12-17 12:39:35"/>
+        </createTable>
+    </changeSet>   
+    
+</databaseChangeLog>

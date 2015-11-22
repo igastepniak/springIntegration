@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+        <form method="POST" enctype="multipart/formdata"
+              action="http://localhost:8080/mbg/api/upload">
+            File to upload: <input type="file" name="file"><br /> <br /> <br /> <input type="submit"
+                value="Upload"> Press here to upload the file!
+        </form>
+    </body>
+</html>
