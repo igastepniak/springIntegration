@@ -1,7 +1,6 @@
 package pl.stepniak.example.client.test;
 
 import java.util.List;
-import javafx.application.Application;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
@@ -10,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import pl.stepniak.example.Application;
 import pl.stepniak.example.client.ClientModel;
 import pl.stepniak.example.client.ClientRepository;
 
@@ -22,8 +22,8 @@ public class ClientIntegrationTest {
     private ClientRepository repo;
 
     @Test
-    public void should_return_proper_sponsor_list_length() {
+    public void should_return_proper_client_list_length() {
         List<ClientModel> allClients = repo.fetchClients();
-        assertThat("Client list shoud return 7 record", allClients.size(), is(7));
+        assertThat("Client list shoud return 3 records", allClients.size(), is(3));
     }
 }

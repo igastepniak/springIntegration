@@ -83,7 +83,7 @@
                             <includes>.*</includes>
                             <schemata>
                                 <schema>
-                                    <inputSchema>example</inputSchema>
+                                    <inputSchema>public</inputSchema>
                                 </schema>
                             </schemata>                           
                         </database>

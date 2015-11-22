@@ -8,7 +8,7 @@
     
    
     <changeSet id="0" author="istepniak">
-        <createTable tableName="client" schemaName="example">
+        <createTable tableName="client" schemaName="public">
             <column name="id" type="bigint" >
                 <constraints primaryKey="true" nullable="false" />
             </column>

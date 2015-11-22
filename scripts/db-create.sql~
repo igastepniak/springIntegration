@@ -1,7 +1,7 @@
-create user clickadmin with password 'clickadminpass';
-create database clickops with owner clickadmin;
-\connect clickops;
-CREATE SCHEMA clickops;
-GRANT ALL PRIVILEGES ON DATABASE clickops TO clickadmin;
-GRANT ALL PRIVILEGES ON SCHEMA clickops TO clickadmin; 
+create user example with password 'example';
+create database example with owner example;
+\connect example;
+CREATE SCHEMA example;
+GRANT ALL PRIVILEGES ON DATABASE example TO example;
+GRANT ALL PRIVILEGES ON SCHEMA example TO example; 
 
